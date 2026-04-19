@@ -4,7 +4,9 @@ const cors = require("cors");
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "*"
+}));
 
 // Connect MongoDB
 mongoose.connect("mongodb://krishnadwivedi792_db_user:881NjY120WxkkRIE@cluster0.g1qpzaj.mongodb.net/?appName=Cluster0");
