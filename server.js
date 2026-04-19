@@ -21,6 +21,8 @@ const User = mongoose.model("User", {
 app.post("/signup", async (req, res) => {
   const { username, password } = req.body;
 
+  console.log("Received:", username, password);
+
   await User.create({ username, password });
 
   res.json({ message: "User saved!" });
