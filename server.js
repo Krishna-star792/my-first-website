@@ -9,7 +9,7 @@ app.use(cors({
 }));
 
 // Connect MongoDB
-mongoose.connect("mongodb+srv://krishnadwivedi792_db_user:881NjY120WxkkRIE@cluster0.g1qpzaj.mongodb.net/?appName=Cluster0");
+mongoose.connect("mongodb://krishnadwivedi792_db_user:881NjY120WxkkRIE@cluster0.g1qpzaj.mongodb.net/?appName=Cluster0");
 
 // Create User Schema
 const User = mongoose.model("User", {
